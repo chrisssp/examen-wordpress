@@ -1,0 +1,36 @@
+# WordPress core (no subir core de WP, solo custom)
+wp-admin/
+wp-includes/
+wp-content/plugins/easy-table-of-contents/
+wp-content/plugins/seo-by-rank-math/
+wp-content/plugins/shortpixel-image-optimiser/
+wp-content/plugins/updraftplus/
+wp-content/plugins/wordfence/
+wp-content/plugins/wpforms-lite/
+wp-content/plugins/wp-super-cache/
+wp-content/themes/twentytwentyfive/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/languages/
+
+# WordPress config (credenciales)
+wp-config.php
+
+# WordPress logs
+*.log
+error_log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# LocalWP
+LocalRouter/
