@@ -66,8 +66,6 @@ Consume la API publica de WordPress.org para mostrar los 5 plugins de SEO mas po
 5. Activar plugin "SEO Plugins API"
 6. Insertar `[seo_plugins_list]` en una pagina
 
-
-
 ## API Utilizada
 
 - **WordPress.org Plugins API**: `https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&search=seo`
