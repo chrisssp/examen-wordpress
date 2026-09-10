@@ -1,0 +1,175 @@
+/*
+Theme Name: Tema Custom Dark
+Theme URI: http://localhost
+Author: Christian
+Author URI: https://github.com/chrisssp
+Description: Dark mode variant del Tema Custom - estilo Apple oscuro alternativo
+Version: 1.0
+Text Domain: tema-custom-child
+Template: tema-custom
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --apple-bg: #0a0a0a;
+    --apple-card: #161618;
+    --apple-text: #f0f0f2;
+    --apple-muted: #7a7a7e;
+    --apple-accent: #bf5af2;
+    --apple-accent-hover: #d47aff;
+    --apple-border: #2a2a2c;
+}
+
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+body {
+    background-color: var(--apple-bg);
+    color: var(--apple-text);
+    letter-spacing: -0.011em;
+}
+
+/* Header - solid dark, no blur */
+header {
+    background-color: #0a0a0a !important;
+    backdrop-filter: none !important;
+    border-bottom-color: var(--apple-border) !important;
+}
+
+header a {
+    letter-spacing: -0.02em;
+}
+
+/* Cards - borderless, subtle glow on hover */
+.bg-white {
+    background-color: var(--apple-card) !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 0 1px var(--apple-border) !important;
+}
+
+article:hover {
+    box-shadow: 0 0 0 1px var(--apple-accent), 0 8px 40px rgba(191, 90, 242, 0.08) !important;
+}
+
+/* Footer */
+footer {
+    background-color: #111113 !important;
+    border-top: 1px solid var(--apple-border);
+}
+
+/* Accent color - purple instead of blue */
+.bg-apple-blue {
+    background-color: var(--apple-accent) !important;
+}
+
+.text-apple-blue {
+    color: var(--apple-accent) !important;
+}
+
+a {
+    color: var(--apple-accent);
+}
+
+a:hover {
+    color: var(--apple-accent-hover);
+}
+
+/* Post content - tighter, more editorial */
+.post-content {
+    color: #d4d4d8;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    letter-spacing: -0.006em;
+}
+
+.post-content > * + * {
+    margin-top: 1.25em;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: var(--apple-text);
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid var(--apple-border);
+}
+
+.post-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--apple-text);
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.post-content p {
+    color: #a1a1a6;
+}
+
+.post-content a {
+    color: var(--apple-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.post-content blockquote {
+    border-left-color: var(--apple-accent);
+    background: #111113;
+    border-radius: 0 8px 8px 0;
+    color: #7a7a7e;
+}
+
+.post-content code {
+    background: #1e1e20;
+    color: #ff6b9d;
+}
+
+.post-content pre {
+    background: #0d0d0f;
+    border: 1px solid var(--apple-border);
+    border-radius: 8px;
+}
+
+.post-content img {
+    border-radius: 8px;
+}
+
+/* Hero section - centered, minimal */
+section.text-center h1 {
+    font-weight: 300;
+    letter-spacing: -0.04em;
+}
+
+/* Tags - pill style */
+.rounded-full {
+    border-radius: 9999px !important;
+}
+
+/* Heading in hero */
+section h2 {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+/* Border overrides */
+.border-apple-border {
+    border-color: var(--apple-border) !important;
+}
+
+.text-apple-text {
+    color: var(--apple-text) !important;
+}
+
+.text-apple-muted {
+    color: var(--apple-muted) !important;
+}
+
+.bg-apple-bg {
+    background-color: var(--apple-bg) !important;
+}
